@@ -20,6 +20,7 @@ package grpc
 
 import (
 	"context"
+	pContext "github.com/panjjo/context"
 )
 
 // UnaryInvoker is called by UnaryClientInterceptor to complete RPCs.
@@ -57,7 +58,7 @@ type UnaryHandler func(ctx context.Context, req interface{}) (interface{}, error
 // contains all the information of this RPC the interceptor can operate on. And handler is the wrapper
 // of the service method implementation. It is the responsibility of the interceptor to invoke handler
 // to complete the RPC.
-type UnaryServerInterceptor func(ctx context.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error)
+type UnaryServerInterceptor func(ctx pContext.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error)
 
 // StreamServerInfo consists of various information about a streaming RPC on
 // server side. All per-rpc information may be mutated by the interceptor.
