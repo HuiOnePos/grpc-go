@@ -27,15 +27,15 @@ import (
 	"testing"
 
 	typespb "github.com/golang/protobuf/ptypes/wrappers"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	addresspb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/address"
-	basepb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/base"
-	edspb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/eds"
-	endpointpb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/endpoint/endpoint"
-	percentpb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/type/percent"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
+	"github.com/panjjo/grpc-go/balancer"
+	"github.com/panjjo/grpc-go/balancer/roundrobin"
+	addresspb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/address"
+	basepb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/base"
+	edspb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/eds"
+	endpointpb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/endpoint/endpoint"
+	percentpb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/type/percent"
+	"github.com/panjjo/grpc-go/connectivity"
+	"github.com/panjjo/grpc-go/resolver"
 )
 
 var (

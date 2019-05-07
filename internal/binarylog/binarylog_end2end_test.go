@@ -30,13 +30,13 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/metadata"
-	testpb "google.golang.org/grpc/stats/grpc_testing"
-	"google.golang.org/grpc/status"
+	"github.com/panjjo/grpc-go"
+	pb "github.com/panjjo/grpc-go/binarylog/grpc_binarylog_v1"
+	"github.com/panjjo/grpc-go/grpclog"
+	"github.com/panjjo/grpc-go/internal/binarylog"
+	"github.com/panjjo/grpc-go/metadata"
+	testpb "github.com/panjjo/grpc-go/stats/grpc_testing"
+	"github.com/panjjo/grpc-go/status"
 )
 
 func init() {

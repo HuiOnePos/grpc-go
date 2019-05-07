@@ -8,14 +8,14 @@ import fmt "fmt"
 import math "math"
 import wrappers "github.com/golang/protobuf/ptypes/wrappers"
 import _ "google.golang.org/genproto/googleapis/api/annotations"
-import discovery "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/discovery"
-import endpoint "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/endpoint/endpoint"
-import percent "google.golang.org/grpc/balancer/xds/internal/proto/envoy/type/percent"
-import _ "google.golang.org/grpc/balancer/xds/internal/proto/validate"
+import discovery "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/discovery"
+import endpoint "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/endpoint/endpoint"
+import percent "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/type/percent"
+import _ "github.com/panjjo/grpc-go/balancer/xds/internal/proto/validate"
 
 import (
 	context "golang.org/x/net/context"
-	grpc "google.golang.org/grpc"
+	grpc "github.com/panjjo/grpc-go"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -202,7 +202,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // EndpointDiscoveryServiceClient is the client API for EndpointDiscoveryService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/panjjo/grpc-go#ClientConn.NewStream.
 type EndpointDiscoveryServiceClient interface {
 	StreamEndpoints(ctx context.Context, opts ...grpc.CallOption) (EndpointDiscoveryService_StreamEndpointsClient, error)
 	FetchEndpoints(ctx context.Context, in *discovery.DiscoveryRequest, opts ...grpc.CallOption) (*discovery.DiscoveryResponse, error)

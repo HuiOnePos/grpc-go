@@ -24,12 +24,12 @@ import (
 	"io"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	healthpb "google.golang.org/grpc/health/grpc_health_v1"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/status"
+	"github.com/panjjo/grpc-go"
+	"github.com/panjjo/grpc-go/codes"
+	healthpb "github.com/panjjo/grpc-go/health/grpc_health_v1"
+	"github.com/panjjo/grpc-go/internal"
+	"github.com/panjjo/grpc-go/internal/backoff"
+	"github.com/panjjo/grpc-go/status"
 )
 
 const maxDelay = 120 * time.Second

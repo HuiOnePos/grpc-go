@@ -22,8 +22,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
+	"github.com/panjjo/grpc-go/internal/grpctest"
+	"github.com/panjjo/grpc-go/internal/leakcheck"
 )
 
 type s struct{}

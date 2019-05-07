@@ -8,7 +8,7 @@ import fmt "fmt"
 import math "math"
 import duration "github.com/golang/protobuf/ptypes/duration"
 import wrappers "github.com/golang/protobuf/ptypes/wrappers"
-import _ "google.golang.org/grpc/balancer/xds/internal/proto/validate"
+import _ "github.com/panjjo/grpc-go/balancer/xds/internal/proto/validate"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

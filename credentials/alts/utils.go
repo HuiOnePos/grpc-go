@@ -31,7 +31,7 @@ import (
 	"runtime"
 	"strings"
 
-	"google.golang.org/grpc/peer"
+	"github.com/panjjo/grpc-go/peer"
 )
 
 const (

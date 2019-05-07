@@ -7,8 +7,8 @@ import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
 import wrappers "github.com/golang/protobuf/ptypes/wrappers"
-import base "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/base"
-import _ "google.golang.org/grpc/balancer/xds/internal/proto/validate"
+import base "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/base"
+import _ "github.com/panjjo/grpc-go/balancer/xds/internal/proto/validate"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

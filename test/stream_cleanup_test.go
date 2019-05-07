@@ -22,10 +22,10 @@ import (
 	"context"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"github.com/panjjo/grpc-go"
+	"github.com/panjjo/grpc-go/codes"
+	"github.com/panjjo/grpc-go/status"
+	testpb "github.com/panjjo/grpc-go/test/grpc_testing"
 )
 
 func (s) TestStreamCleanup(t *testing.T) {

@@ -21,8 +21,8 @@ package grpclb
 import (
 	"encoding/json"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer/roundrobin"
+	"github.com/panjjo/grpc-go"
+	"github.com/panjjo/grpc-go/balancer/roundrobin"
 )
 
 type serviceConfig struct {

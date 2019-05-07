@@ -26,11 +26,11 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/channelz/service"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
+	"github.com/panjjo/grpc-go"
+	"github.com/panjjo/grpc-go/channelz/service"
+	pb "github.com/panjjo/grpc-go/examples/helloworld/helloworld"
+	"github.com/panjjo/grpc-go/resolver"
+	"github.com/panjjo/grpc-go/resolver/manual"
 )
 
 const (

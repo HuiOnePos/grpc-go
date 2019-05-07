@@ -28,15 +28,15 @@ import (
 	"strconv"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	edspb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/eds"
-	percentpb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/type/percent"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
+	"github.com/panjjo/grpc-go/balancer"
+	"github.com/panjjo/grpc-go/balancer/roundrobin"
+	edspb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/eds"
+	percentpb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/type/percent"
+	"github.com/panjjo/grpc-go/codes"
+	"github.com/panjjo/grpc-go/connectivity"
+	"github.com/panjjo/grpc-go/grpclog"
+	"github.com/panjjo/grpc-go/resolver"
+	"github.com/panjjo/grpc-go/status"
 )
 
 type localityConfig struct {

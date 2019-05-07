@@ -9,7 +9,7 @@ import math "math"
 
 import (
 	context "golang.org/x/net/context"
-	grpc "google.golang.org/grpc"
+	grpc "github.com/panjjo/grpc-go"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -610,7 +610,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // TestServiceClient is the client API for TestService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/panjjo/grpc-go#ClientConn.NewStream.
 type TestServiceClient interface {
 	// One empty request followed by one empty response.
 	EmptyCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
@@ -993,7 +993,7 @@ var _TestService_serviceDesc = grpc.ServiceDesc{
 
 // UnimplementedServiceClient is the client API for UnimplementedService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/panjjo/grpc-go#ClientConn.NewStream.
 type UnimplementedServiceClient interface {
 	// A call that no server should implement
 	UnimplementedCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)

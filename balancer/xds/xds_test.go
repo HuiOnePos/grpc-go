@@ -28,13 +28,13 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/balancer"
-	discoverypb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/discovery"
-	edspb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/eds"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/resolver"
+	"github.com/panjjo/grpc-go/balancer"
+	discoverypb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/discovery"
+	edspb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/eds"
+	"github.com/panjjo/grpc-go/connectivity"
+	"github.com/panjjo/grpc-go/internal/grpctest"
+	"github.com/panjjo/grpc-go/internal/leakcheck"
+	"github.com/panjjo/grpc-go/resolver"
 )
 
 var lbABuilder *balancerABuilder

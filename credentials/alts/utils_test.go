@@ -24,8 +24,8 @@ import (
 	"strings"
 	"testing"
 
-	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
-	"google.golang.org/grpc/peer"
+	altspb "github.com/panjjo/grpc-go/credentials/alts/internal/proto/grpc_gcp"
+	"github.com/panjjo/grpc-go/peer"
 )
 
 func TestIsRunningOnGCP(t *testing.T) {

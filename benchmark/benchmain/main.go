@@ -60,14 +60,14 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	bm "google.golang.org/grpc/benchmark"
-	testpb "google.golang.org/grpc/benchmark/grpc_testing"
-	"google.golang.org/grpc/benchmark/latency"
-	"google.golang.org/grpc/benchmark/stats"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/test/bufconn"
+	"github.com/panjjo/grpc-go"
+	bm "github.com/panjjo/grpc-go/benchmark"
+	testpb "github.com/panjjo/grpc-go/benchmark/grpc_testing"
+	"github.com/panjjo/grpc-go/benchmark/latency"
+	"github.com/panjjo/grpc-go/benchmark/stats"
+	"github.com/panjjo/grpc-go/grpclog"
+	"github.com/panjjo/grpc-go/internal/channelz"
+	"github.com/panjjo/grpc-go/test/bufconn"
 )
 
 const (

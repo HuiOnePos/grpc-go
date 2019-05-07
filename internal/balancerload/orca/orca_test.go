@@ -22,8 +22,8 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/internal/balancerload/orca/orca_v1"
-	"google.golang.org/grpc/metadata"
+	"github.com/panjjo/grpc-go/internal/balancerload/orca/orca_v1"
+	"github.com/panjjo/grpc-go/metadata"
 )
 
 var (

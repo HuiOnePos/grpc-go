@@ -6,11 +6,11 @@ package v2
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import discovery "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/discovery"
+import discovery "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/discovery"
 
 import (
 	context "golang.org/x/net/context"
-	grpc "google.golang.org/grpc"
+	grpc "github.com/panjjo/grpc-go"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -68,7 +68,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // AggregatedDiscoveryServiceClient is the client API for AggregatedDiscoveryService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/panjjo/grpc-go#ClientConn.NewStream.
 type AggregatedDiscoveryServiceClient interface {
 	StreamAggregatedResources(ctx context.Context, opts ...grpc.CallOption) (AggregatedDiscoveryService_StreamAggregatedResourcesClient, error)
 	DeltaAggregatedResources(ctx context.Context, opts ...grpc.CallOption) (AggregatedDiscoveryService_DeltaAggregatedResourcesClient, error)

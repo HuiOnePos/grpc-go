@@ -10,8 +10,8 @@ import any "github.com/golang/protobuf/ptypes/any"
 import duration "github.com/golang/protobuf/ptypes/duration"
 import empty "github.com/golang/protobuf/ptypes/empty"
 import _struct "github.com/golang/protobuf/ptypes/struct"
-import base "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/base"
-import _ "google.golang.org/grpc/balancer/xds/internal/proto/validate"
+import base "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/base"
+import _ "github.com/panjjo/grpc-go/balancer/xds/internal/proto/validate"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

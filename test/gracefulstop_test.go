@@ -28,9 +28,9 @@ import (
 	"time"
 
 	"golang.org/x/net/http2"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/envconfig"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"github.com/panjjo/grpc-go"
+	"github.com/panjjo/grpc-go/internal/envconfig"
+	testpb "github.com/panjjo/grpc-go/test/grpc_testing"
 )
 
 type delayListener struct {

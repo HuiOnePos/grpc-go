@@ -25,10 +25,10 @@ import (
 	"log"
 	"net"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	ecpb "google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/status"
+	"github.com/panjjo/grpc-go"
+	"github.com/panjjo/grpc-go/codes"
+	ecpb "github.com/panjjo/grpc-go/examples/features/proto/echo"
+	"github.com/panjjo/grpc-go/status"
 )
 
 const addr = "localhost:50051"

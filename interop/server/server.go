@@ -23,13 +23,13 @@ import (
 	"net"
 	"strconv"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/interop"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/testdata"
+	"github.com/panjjo/grpc-go"
+	"github.com/panjjo/grpc-go/credentials"
+	"github.com/panjjo/grpc-go/credentials/alts"
+	"github.com/panjjo/grpc-go/grpclog"
+	"github.com/panjjo/grpc-go/interop"
+	testpb "github.com/panjjo/grpc-go/interop/grpc_testing"
+	"github.com/panjjo/grpc-go/testdata"
 )
 
 var (

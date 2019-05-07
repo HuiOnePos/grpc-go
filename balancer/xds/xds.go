@@ -31,14 +31,14 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/xds/edsbalancer"
-	cdspb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/cds"
-	edspb "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/eds"
+	"github.com/panjjo/grpc-go/balancer"
+	"github.com/panjjo/grpc-go/balancer/xds/edsbalancer"
+	cdspb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/cds"
+	edspb "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/eds"
 
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
+	"github.com/panjjo/grpc-go/connectivity"
+	"github.com/panjjo/grpc-go/grpclog"
+	"github.com/panjjo/grpc-go/resolver"
 )
 
 const (

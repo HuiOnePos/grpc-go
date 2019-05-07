@@ -11,22 +11,22 @@ import duration "github.com/golang/protobuf/ptypes/duration"
 import _struct "github.com/golang/protobuf/ptypes/struct"
 import wrappers "github.com/golang/protobuf/ptypes/wrappers"
 import _ "google.golang.org/genproto/googleapis/api/annotations"
-import cert "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/auth/cert"
-import circuit_breaker "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/cluster/circuit_breaker"
-import outlier_detection "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/cluster/outlier_detection"
-import address "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/address"
-import base "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/base"
-import config_source "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/config_source"
-import health_check "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/health_check"
-import protocol "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/protocol"
-import discovery "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/discovery"
-import eds "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/eds"
-import percent "google.golang.org/grpc/balancer/xds/internal/proto/envoy/type/percent"
-import _ "google.golang.org/grpc/balancer/xds/internal/proto/validate"
+import cert "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/auth/cert"
+import circuit_breaker "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/cluster/circuit_breaker"
+import outlier_detection "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/cluster/outlier_detection"
+import address "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/address"
+import base "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/base"
+import config_source "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/config_source"
+import health_check "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/health_check"
+import protocol "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/protocol"
+import discovery "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/discovery"
+import eds "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/eds"
+import percent "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/type/percent"
+import _ "github.com/panjjo/grpc-go/balancer/xds/internal/proto/validate"
 
 import (
 	context "golang.org/x/net/context"
-	grpc "google.golang.org/grpc"
+	grpc "github.com/panjjo/grpc-go"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -1412,7 +1412,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // ClusterDiscoveryServiceClient is the client API for ClusterDiscoveryService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/panjjo/grpc-go#ClientConn.NewStream.
 type ClusterDiscoveryServiceClient interface {
 	StreamClusters(ctx context.Context, opts ...grpc.CallOption) (ClusterDiscoveryService_StreamClustersClient, error)
 	DeltaClusters(ctx context.Context, opts ...grpc.CallOption) (ClusterDiscoveryService_DeltaClustersClient, error)

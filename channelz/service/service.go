@@ -29,14 +29,14 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	durpb "github.com/golang/protobuf/ptypes/duration"
 	wrpb "github.com/golang/protobuf/ptypes/wrappers"
-	"google.golang.org/grpc"
-	channelzgrpc "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/status"
+	"github.com/panjjo/grpc-go"
+	channelzgrpc "github.com/panjjo/grpc-go/channelz/grpc_channelz_v1"
+	channelzpb "github.com/panjjo/grpc-go/channelz/grpc_channelz_v1"
+	"github.com/panjjo/grpc-go/codes"
+	"github.com/panjjo/grpc-go/connectivity"
+	"github.com/panjjo/grpc-go/credentials"
+	"github.com/panjjo/grpc-go/internal/channelz"
+	"github.com/panjjo/grpc-go/status"
 )
 
 func init() {

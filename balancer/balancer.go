@@ -26,11 +26,11 @@ import (
 	"net"
 	"strings"
 
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
+	"github.com/panjjo/grpc-go/connectivity"
+	"github.com/panjjo/grpc-go/credentials"
+	"github.com/panjjo/grpc-go/internal"
+	"github.com/panjjo/grpc-go/metadata"
+	"github.com/panjjo/grpc-go/resolver"
 )
 
 var (

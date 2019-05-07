@@ -30,22 +30,22 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	_ "google.golang.org/grpc/balancer/roundrobin" // To register roundrobin.
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	_ "google.golang.org/grpc/resolver/dns"         // To register dns resolver.
-	_ "google.golang.org/grpc/resolver/passthrough" // To register passthrough resolver.
-	"google.golang.org/grpc/status"
+	"github.com/panjjo/grpc-go/balancer"
+	_ "github.com/panjjo/grpc-go/balancer/roundrobin" // To register roundrobin.
+	"github.com/panjjo/grpc-go/codes"
+	"github.com/panjjo/grpc-go/connectivity"
+	"github.com/panjjo/grpc-go/credentials"
+	"github.com/panjjo/grpc-go/grpclog"
+	"github.com/panjjo/grpc-go/internal/backoff"
+	"github.com/panjjo/grpc-go/internal/channelz"
+	"github.com/panjjo/grpc-go/internal/envconfig"
+	"github.com/panjjo/grpc-go/internal/grpcsync"
+	"github.com/panjjo/grpc-go/internal/transport"
+	"github.com/panjjo/grpc-go/keepalive"
+	"github.com/panjjo/grpc-go/resolver"
+	_ "github.com/panjjo/grpc-go/resolver/dns"         // To register dns resolver.
+	_ "github.com/panjjo/grpc-go/resolver/passthrough" // To register passthrough resolver.
+	"github.com/panjjo/grpc-go/status"
 )
 
 const (

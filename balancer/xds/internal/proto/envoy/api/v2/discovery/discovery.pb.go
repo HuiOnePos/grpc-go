@@ -8,7 +8,7 @@ import fmt "fmt"
 import math "math"
 import any "github.com/golang/protobuf/ptypes/any"
 import status "google.golang.org/genproto/googleapis/rpc/status"
-import base "google.golang.org/grpc/balancer/xds/internal/proto/envoy/api/v2/core/base"
+import base "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/api/v2/core/base"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

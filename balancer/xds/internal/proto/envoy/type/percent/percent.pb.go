@@ -6,7 +6,7 @@ package envoy_type
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import _ "google.golang.org/grpc/balancer/xds/internal/proto/validate"
+import _ "github.com/panjjo/grpc-go/balancer/xds/internal/proto/validate"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

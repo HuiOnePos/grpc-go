@@ -9,8 +9,8 @@ import math "math"
 import any "github.com/golang/protobuf/ptypes/any"
 import _struct "github.com/golang/protobuf/ptypes/struct"
 import wrappers "github.com/golang/protobuf/ptypes/wrappers"
-import percent "google.golang.org/grpc/balancer/xds/internal/proto/envoy/type/percent"
-import _ "google.golang.org/grpc/balancer/xds/internal/proto/validate"
+import percent "github.com/panjjo/grpc-go/balancer/xds/internal/proto/envoy/type/percent"
+import _ "github.com/panjjo/grpc-go/balancer/xds/internal/proto/validate"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
