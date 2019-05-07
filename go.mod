@@ -1,4 +1,4 @@
-module google.golang.org/grpc
+module github.com/panjjo/grpc-go
 
 require (
 	cloud.google.com/go v0.26.0 // indirect
