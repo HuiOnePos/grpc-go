@@ -49,6 +49,7 @@ import (
 	"github.com/panjjo/grpc-go/stats"
 	"github.com/panjjo/grpc-go/status"
 	"github.com/panjjo/grpc-go/tap"
+	pContext "github.com/panjjo/context"
 )
 
 const (
@@ -56,7 +57,7 @@ const (
 	defaultServerMaxSendMessageSize    = math.MaxInt32
 )
 
-type methodHandler func(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor UnaryServerInterceptor) (interface{}, error)
+type methodHandler func(srv interface{}, ctx pContext.Context, dec func(interface{}) error, interceptor UnaryServerInterceptor) (interface{}, error)
 
 // MethodDesc represents an RPC service's method specification.
 type MethodDesc struct {
@@ -995,7 +996,7 @@ func (s *Server) processUnaryRPC(t transport.ServerTransport, stream *transport.
 		return nil
 	}
 	ctx := NewContextWithServerTransportStream(stream.Context(), stream)
-	reply, appErr := md.Handler(srv.server, ctx, df, s.opts.unaryInt)
+	reply, appErr := md.Handler(srv.server, pContext.FromSysContext(ctx), df, s.opts.unaryInt)
 	if appErr != nil {
 		appStatus, ok := status.FromError(appErr)
 		if !ok {
